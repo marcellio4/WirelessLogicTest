@@ -20,10 +20,10 @@ class VidexController extends AbstractController
     public function productOptions(Company $company): Response
     {
         $scraperPackage = new ScraperPackage("https://videx.comesconnected.com/");
-        $company->setTitlePath(".header > h3");
-        $company->setDescriptionPath(".package-name");
-        $company->setPricePath(".package-price span");
-        $company->setDiscountPath(".package-price > p");
+        $company->setTitlePath(".header > h3")
+            ->setDescriptionPath(".package-name")
+            ->setPricePath(".package-price span")
+            ->setDiscountPath(".package-price > p");
 
         $result = $scraperPackage->getScraperPackages($company, ".package");
         return new JsonResponse($result);
