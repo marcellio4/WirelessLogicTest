@@ -30,7 +30,7 @@ This api will return json object will all products options in format:
 2. cd into project
 3. run `docker-compose up -d --build`
 4. run `docker exec -it php-8 bin/bash`
-5. run `composer install` we need compser vendor folder
+5. run `composer install` we need compser vendor folder inside app folder
 
 To run tests you need to be inside container and cd to app folder then run `php ./vendor/bin/phpunit`
 
