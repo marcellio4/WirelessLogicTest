@@ -1,6 +1,6 @@
 # Scraper Api to get all products from websites
 
-This api will return json object will all products options in format:
+This api will return json object of products options in format:
 ```json
 [
     {
