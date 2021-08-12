@@ -33,3 +33,8 @@ This api will return json object will all products options in format:
 5. run `composer install` we need compser vendor folder
 
 To run tests you need to be inside container and cd to app folder then run `php ./vendor/bin/phpunit`
+
+To see outcome I'm using postman but if you using any other api that's fine just enter `http://localhost:8080/api/videx/products`
+or you can go to [localhost](http://localhost:8080/api/videx/products)
+
+To reuse on other webiste just create new controller and then create class ScraperPackage with https address of the website and set all paths to Title, Description, Price, Discount and just call `$scraperPackage->getScraperPackages($company, $pathNameOfProducts)` look at VidexController as example. 
